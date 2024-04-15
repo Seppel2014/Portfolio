@@ -5,18 +5,16 @@
 }
 
 :root {
-    --primary_color: rgb(84, 66, 241);
+    --primary_color: rgb(110, 25, 221);
+    --background_color: rgb(255, 255, 255);
     --text_color: black;
 }
 
 html {
-    font-family: 'Verdana', Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
+    line-height: 1.7;
     color: var(--text_color);
-    background-color: #fff;
 }
-
-
 
 .content {
     display: flex;
@@ -32,12 +30,6 @@ html {
     flex: 1; 
     width: 400px;
     border-radius: 10px;
-}
-
-.footer.content {
-    text-align: center;
-    display: inline-flex;
-    background-color: green;
 }
 
 .section {
@@ -60,7 +52,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Header styles */
 header {
     background-color: var(--primary_color);
     color: #ffffff;
@@ -69,6 +60,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul {
@@ -106,7 +98,7 @@ div.block {
     left: 15%;
     padding: 1rem;
     margin: 20px;
-    background: #f8f9fa;
+    background: var(--background_color);
     border-radius: 8px;
     width: 70%;
 }
@@ -126,7 +118,7 @@ h1, h2 {
 }
 
 .portfolio-item:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .portfolio-item img {
@@ -143,6 +135,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
 }
 
 footer p {
@@ -170,7 +163,7 @@ footer p {
 
 #downloads {
     text-align: center;
-    background: #f8f9fa;
+    background: var(--background_color);
     border-radius: 8px;
 }
 
@@ -226,8 +219,8 @@ footer p {
 }
 
 #container_top {
-    display: flex; /* Use flexbox for laying out the items */    
-    overflow: hidden; /* Ensures the border radius clips the content */
+    display: flex; 
+    overflow: hidden; 
 }
 
 .image_section {
@@ -239,6 +232,7 @@ footer p {
     width: 100%; 
     height: auto; 
     display: block; 
+    border-radius: 5px;
   }
 
 .text_section {
