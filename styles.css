@@ -9,12 +9,14 @@
     --text_color: black;
 }
 
-body, html {
+html {
     font-family: 'Verdana', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     color: var(--text_color);
     background-color: #fff;
 }
+
+
 
 .content {
     display: flex;
@@ -100,10 +102,13 @@ h3 {
 }
 
 div.block {
+    position: relative;
+    left: 15%;
     padding: 1rem;
     margin: 20px;
     background: #f8f9fa;
     border-radius: 8px;
+    width: 70%;
 }
 
 h1, h2 {
@@ -218,4 +223,26 @@ footer p {
         width: 80%;
         margin-bottom: 20px;
     }
+}
+
+#container_top {
+    display: flex; /* Use flexbox for laying out the items */    
+    overflow: hidden; /* Ensures the border radius clips the content */
+}
+
+.image_section {
+    flex: 1; 
+    width: 20%; 
+}
+
+.image_section img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+  }
+
+.text_section {
+    flex: 5; 
+    padding: 20px; 
+    color: var(--text_color); 
 }
