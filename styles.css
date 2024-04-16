@@ -5,7 +5,7 @@
 }
 
 :root {
-    --primary_color: rgb(0, 0, 0);
+    --primary_color: rgb(31, 31, 31);
     --background_color: rgb(255, 255, 255);
     --text_color: black;
 }
