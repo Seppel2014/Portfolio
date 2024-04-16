@@ -17,7 +17,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#welcome">Willkommen</a></li>
+                <li><a href="#welcome">Über mich</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Kontaktmöglichkeiten</a></li>
                 <li><a href="#downloads">Downloads</a></li>
@@ -27,6 +27,8 @@
 </head>
 
 <body>
+    <div class="fixed-sidebar"></div>
+
     <a class="anchor" id="welcome"></a>
     <div class="block" id="container_top">
         <div class="image_section">
@@ -34,10 +36,12 @@
         </div>
 
         <div class="text_section">
-            <h2>Willkommen</h2>
+            <h2>Über Mich</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae perferendis nulla tempore nostrum officia amet, explicabo, consequatur obcaecati voluptas perspiciatis esse veniam velit illum, voluptatum natus. Sunt, nesciunt inventore.</p>
           </div>
     </div>
+
+    <div class="custom-line"></div>
 
     <a class="anchor" id="portfolio"></a>
     <div class="block">
@@ -85,18 +89,22 @@
             </div>
             <a href="files/videos/vid3.mp4">Das Video öffnen</a> 
         </div>
-
     </div>
+
+    <div class="custom-line"></div>
 
     <a class="anchor" id="contact"></a>
     <div class="block">
         <h2>Kontaktmöglichkeiten</h2>
         <div>
-            <p><img src="files/icons/mail.png">&nbsp; Email: <a href="mailto:daiber-simon@gmx.de">daiber-simon@gmx.de</a><p>
-            <p><img src="files/icons/telefon.png">&nbsp; Mobile Nummer: <a>0163 3871516</a></p>
+             <a href="mailto:daiber-simon@gmx.de" class="contact_links">E-Mail</a>
+             <a href="https://www.linkedin.com/in/simon-daiber/" class="contact_links">LinkedIn</a>
+            
         </div>
         
     </div>
+
+    <div class="custom-line"></div>
 
     <a class="anchor" id="downloads"></a>
     <div class="block" id="downloads">
@@ -113,6 +121,11 @@
 </body>
 
 <footer>
+    <p>
+        <a href="https://www.linkedin.com/in/simon-daiber/" target="_blank"><img src="files/icons/linkedin_white.png" alt="LinkedIn" /></a>
+        &nbsp
+        <a href="mailto:daiber-simon@gmx.de" target="_blank"><img src="files/icons/mail_white.png" alt="E-Mail" /></a>
+    </p>
     <p>Simon Daiber, 2024</p>
 </footer>
 </html>
