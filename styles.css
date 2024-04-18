@@ -258,3 +258,15 @@ footer {
     background-color: rgb(241, 241, 241);      
 }
 
+.fixed-sidebar a {
+    display: block;
+    position: relative;
+    top: 39%;    
+    text-align: center;
+    height: 5%;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
