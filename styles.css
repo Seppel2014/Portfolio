@@ -8,6 +8,8 @@
     --primary_color: rgb(31, 31, 31);
     --background_color: rgb(255, 255, 255);
     --text_color: black;
+    --lightpurple: rgb(194, 0, 194);
+    --darkpurple: rgb(116, 0, 116);
 }
 
 html {
@@ -177,6 +179,7 @@ footer {
     transition: background-color 0.3s;
 }
 
+
 .download-button:hover {
     background-color: var(--primary_color);
 }
@@ -234,9 +237,17 @@ footer {
     height: 5%;
 }
 
+.block a {
+    color: var(--lightpurple);
+}
+
 footer a {
-    color: white;
+    color: var(--background_color);
     text-decoration: underline;
+}
+
+a.download-button {
+    color: var(--background_color);
 }
 
 @media screen and (max-width:920px) {
