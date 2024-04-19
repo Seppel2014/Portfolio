@@ -240,14 +240,14 @@ footer a {
 }
 
 @media screen and (max-width:920px) {
+    .text_section { 
+        padding: 0px;
+        color: var(--text_color); 
+    }
+    
     .download-boxes {
         flex-direction: column;
         align-items: center;
-    }
-
-    .box {
-        width: 80%;
-        margin-bottom: 20px;
     }
 
     header nav ul {
@@ -273,8 +273,9 @@ footer a {
     div.block {
         position: relative;
         background: var(--background_color);
-        left: 5%;
-        width: 90%;
+        left: 0%;
+        width: 100%;
+        padding: 10px;
     }
 
     .fixed-sidebar {
