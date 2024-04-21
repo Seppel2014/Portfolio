@@ -9,11 +9,12 @@
     --background_color: rgb(255, 255, 255);
     --text_color: black;
     --lightpurple: rgb(194, 0, 194);
+    --font-headers: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 html {
-    font-family: 'Trebuchet MS', Helvetica, Arial, sans-serif;
-    line-height: 1.7;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
     color: var(--text_color);
     scroll-behavior: smooth;
 }
@@ -32,6 +33,13 @@ html {
     flex: 1; 
     width: 400px;
     border-radius: 10px;
+}
+
+.video#project {
+    position: relative;
+    width: 80%;
+    left: 8%;
+    padding: 4%;
 }
 
 .section {
@@ -55,18 +63,19 @@ a:hover {
 }
 
 .simon {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: var(--font-headers);
     position: absolute;
     left: 2%;
     font-size: 30px;
-    text-shadow: 2px 2px 2px grey;
+    text-shadow: 1px 1px 1px grey;
     top: 10%;
 }
 
 header {
+    font-family: var(--font-headers);
     background-color: var(--primary_color);
     color: var(--background_color);
-    padding: 1rem 0;
+    padding: 0.7%;
     text-align: center;
     position: sticky;
     top: 0;
@@ -82,7 +91,7 @@ header nav ul li {
 header nav ul li a {
     color: #ffffff;
     padding: 5px 10px;
-    font-size: large;
+    font-size: 20px;
 }
 
 div.block {
@@ -94,6 +103,7 @@ div.block {
     border-radius: 8px;
     width: 70%;
 }
+
 
 .portfolio-item {
     margin-bottom: 20px;
@@ -220,7 +230,7 @@ a.download-button {
     color: var(--background_color);
 }
 
-@media screen and (max-width:920px) {
+@media screen and (max-width:960px) {
     .text_section { 
         padding: 0px;
         color: var(--text_color); 
