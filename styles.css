@@ -9,7 +9,6 @@
     --background_color: rgb(255, 255, 255);
     --text_color: black;
     --lightpurple: rgb(194, 0, 194);
-    --darkpurple: rgb(116, 0, 116);
 }
 
 html {
@@ -55,9 +54,18 @@ a:hover {
     text-decoration: underline;
 }
 
+.simon {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    left: 2%;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px grey;
+    top: 10%;
+}
+
 header {
     background-color: var(--primary_color);
-    color: #ffffff;
+    color: var(--background_color);
     padding: 1rem 0;
     text-align: center;
     position: sticky;
@@ -66,34 +74,15 @@ header {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-header nav ul {
-    list-style: none;
-}
-
 header nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 0.2%;
 }
 
 header nav ul li a {
     color: #ffffff;
     padding: 5px 10px;
-}
-
-header nav ul li a:hover,
-header nav ul li a:focus {
-    background-color: var(--primary_color);
-    border-radius: 5px;
-}
-
-h3 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.description {
-    margin: 5px;
-    margin-top: 20px;
+    font-size: large;
 }
 
 div.block {
@@ -104,10 +93,6 @@ div.block {
     background: var(--background_color);
     border-radius: 8px;
     width: 70%;
-}
-
-h1, h2 {
-    color: var(--text_color);
 }
 
 .portfolio-item {
@@ -121,12 +106,6 @@ h1, h2 {
 
 .portfolio-item:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
 }
 
 footer {
@@ -156,15 +135,6 @@ footer {
     background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.box h3 {
-    color: var(--text_color);
-}
-
-.box p {
-    margin: 10px 0;
-    color: var(--text_color);
 }
 
 .download-button {
@@ -291,5 +261,9 @@ a.download-button {
 
     .fixed-sidebar {
         display: none; 
+    }
+
+    .simon {
+        display: none;
     }
 }
