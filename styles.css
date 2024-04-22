@@ -105,7 +105,8 @@ div.block {
 }
 
 div.block h1 {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .content-block {
@@ -126,9 +127,9 @@ div.block h1 {
 
 .portfolio-item {
     margin-bottom: 20px;
-    padding: 10px;
     background: white;
     border-radius: 10px;
+    padding: 10px;
 }
 
 footer {
@@ -162,6 +163,12 @@ footer {
     background-color: var(--background_color);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#website {
+    position: relative;
+    width: 100%;
+    height: auto;
 }
 
 .download-button {
@@ -329,6 +336,7 @@ a.portfolio-button {
     .simon {
         position: relative;
         display: block;
+        left: 0%;
     }
 
     .content-block {
