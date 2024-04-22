@@ -116,6 +116,7 @@ div.block h1 {
 
 .content-block img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -185,7 +186,7 @@ footer {
 }
 
 .image_section img {
-    width: 100%; 
+    width: 100%;
     height: auto; 
     display: block; 
     border-radius: 5px;
