@@ -290,6 +290,12 @@ a.portfolio-button {
         width: 100%;
     }
 
+    #container_top .image_section {
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+
     #website {
         position: relative;
         width: 100%;
