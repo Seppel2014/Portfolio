@@ -104,18 +104,30 @@ div.block {
     width: 70%;
 }
 
+div.block h1 {
+    padding: 10px;
+}
+
+.content-block {
+    flex:1;
+    width: 50%;
+    padding: 1%;
+}
+
+.content-block img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-block video {
+    width: 100%;
+}
 
 .portfolio-item {
     margin-bottom: 20px;
     padding: 10px;
     background: white;
-    border: 1px solid rgba(0,0,0,0.1);
     border-radius: 10px;
-    transition: box-shadow 0.1s ease-in-out;
-}
-
-.portfolio-item:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 footer {
@@ -139,10 +151,14 @@ footer {
     justify-content: space-around;
 }
 
+.download-boxes .portfolio-item {
+    border: 1px solid rgb(201, 201, 201);
+}
+
 .box {
     width: 50%;
     padding-top: 10px;
-    background-color: #ffffff;
+    background-color: var(--background_color);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -153,15 +169,9 @@ footer {
     padding: 10px 20px;
     margin-top: 10px;
     background-color: var(--primary_color);
-    color: #ffffff;
+    color: var(--background_color);
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-
-.download-button:hover {
-    background-color: var(--primary_color);
 }
 
 #container_top {
@@ -200,6 +210,15 @@ footer {
     height: 1px;         
     background-color: var(--primary_color);
     opacity: 50%; 
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.custom-line#small {
+    left: 0%;
+    width: 100%;
+    margin-bottom: 5%;
+    margin-top: 5%;             
 }
 
 .fixed-sidebar {
@@ -230,6 +249,24 @@ a.download-button {
     color: var(--background_color);
 }
 
+a.portfolio-button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: var(--primary_color);
+    color: var(--background_color);
+    border-radius: 5px;
+}
+
+.portfolio-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+#links {
+    display: block;
+    margin-top: 1%;
+}
+
 @media screen and (max-width:960px) {
     .text_section { 
         padding: 0px;
@@ -245,8 +282,17 @@ a.download-button {
         text-align: center;
     }
 
+    #container_top {
+        display: block;    
+    }
+
     .image_section {
-        flex: 0; 
+        width: 100%;
+    }
+
+    #website {
+        position: relative;
+        width: 100%;
     }
 
     section {
@@ -274,6 +320,13 @@ a.download-button {
     }
 
     .simon {
-        display: none;
+        position: relative;
+        display: block;
+    }
+
+    .content-block {
+        display: block;
+        width: 100%;
+        padding: 1%;
     }
 }
