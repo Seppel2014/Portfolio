@@ -5,10 +5,10 @@
 }
 
 :root {
-    --primary_color: rgb(31, 31, 31);
-    --background_color: rgb(255, 255, 255);
+    --black: rgb(31, 31, 31);
+    --white: rgb(255, 255, 255);
     --text_color: black;
-    --lightpurple: rgb(7, 114, 255);
+    --blue: rgb(7, 114, 255);
     --font-headers: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -45,7 +45,7 @@ html {
 .section {
     width: 50%;
     height: 100%;
-    background-color: var(--primary_color);
+    background-color: var(--black);
 }
 
 a.anchor {
@@ -54,7 +54,7 @@ a.anchor {
 }
 
 a {
-    color: var(--primary_color);
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -73,8 +73,8 @@ a:hover {
 
 header {
     font-family: var(--font-headers);
-    background-color: var(--primary_color);
-    color: var(--background_color);
+    background-color: var(--black);
+    color: var(--white);
     padding: 0.7%;
     text-align: center;
     position: sticky;
@@ -99,7 +99,7 @@ div.block {
     left: 15%;
     padding: 1rem;
     margin: 0%;
-    background: var(--background_color);
+    background: var(--white);
     border-radius: 8px;
     width: 70%;
 }
@@ -135,7 +135,7 @@ div.block h1 {
 footer {
     text-align: center;
     padding: 0.5%;
-    background-color: var(--primary_color);
+    background-color: var(--black);
     color: #ffffff;
     position: relative;
     width: 100%;
@@ -144,7 +144,7 @@ footer {
 
 #downloads {
     text-align: center;
-    background: var(--background_color);
+    background: var(--white);
     border-radius: 8px;
 }
 
@@ -160,7 +160,7 @@ footer {
 .box {
     width: 50%;
     padding-top: 10px;
-    background-color: var(--background_color);
+    background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -176,8 +176,8 @@ footer {
     width: 40%;
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: var(--primary_color);
-    color: var(--background_color);
+    background-color: var(--black);
+    color: var(--white);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -216,7 +216,7 @@ footer {
     left: 10%;
     width: 80%;           
     height: 1px;         
-    background-color: var(--primary_color);
+    background-color: var(--black);
     opacity: 50%; 
     margin-top: 1%;
     margin-bottom: 1%;
@@ -245,23 +245,23 @@ footer {
 }
 
 .block a {
-    color: var(--lightpurple);
+    color: var(--blue);
 }
 
 footer a {
-    color: var(--background_color);
+    color: var(--white);
     text-decoration: underline;
 }
 
 a.download-button {
-    color: var(--background_color);
+    color: var(--white);
 }
 
 a.portfolio-button {
     padding: 10px 20px;
     margin-top: 10px;
-    background-color: var(--primary_color);
-    color: var(--background_color);
+    background-color: var(--black);
+    color: var(--white);
     border-radius: 5px;
 }
 
@@ -323,7 +323,7 @@ a.portfolio-button {
 
     div.block {
         position: relative;
-        background: var(--background_color);
+        background: var(--white);
         left: 0%;
         width: 100%;
         padding: 10px;
